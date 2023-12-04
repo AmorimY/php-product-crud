@@ -42,5 +42,5 @@ Esta aplicação PHP é um exemplo de um CRUD para gerenciar produtos em um banc
 #### Edição de Produto
 <img src="/docs/editar-produto.png">
 
-### Apos Excluir Produto
+#### Após Excluir Produto
 <img src="/docs/apos-deletar.png">
