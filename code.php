@@ -8,11 +8,11 @@ if (isset($_POST['delete_student'])) {
     $query_run = mysqli_query($con, $query);
 
     if ($query_run) {
-        $_SESSION['message'] =  "Produto deletado com sucesso";
+        $_SESSION['message'] =  "Produto deletado com sucesso.";
         header("Location: index.php");
         exit(0);
     } else {
-        $_SESSION['message'] =  "Produto não deletado";
+        $_SESSION['message'] =  "Produto não deletado.";
         header("Location: index.php");
         exit(0);
     }
@@ -31,32 +31,32 @@ if (isset($_POST['update_product'])) {
     //Valida os dados para não ter alteração de nenhum produto com campo faltando
     if (empty($name) || empty($quantity) || empty($description) || empty($price) || empty($date) || empty($hour)) {
         if (empty($name)) {
-            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Nome";
+            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Nome.";
             header("Location: index.php");
             exit(0);
         }
         if (empty($quantity)) {
-            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Quantidade";
+            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Quantidade.";
             header("Location: index.php");
             exit(0);
         }
         if (empty($description)) {
-            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Descrição";
+            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Descrição.";
             header("Location: index.php");
             exit(0);
         }
         if (empty($price)) {
-            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Preço";
+            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Preço.";
             header("Location: index.php");
             exit(0);
         }
         if (empty($date)) {
-            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Data do Cadastro";
+            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Data do Cadastro.";
             header("Location: index.php");
             exit(0);
         }
         if (empty($hour)) {
-            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Hora";
+            $_SESSION['message'] =  "Produto não alterado. Preencher campo : Hora.";
             header("Location: index.php");
             exit(0);
         }
@@ -67,11 +67,11 @@ if (isset($_POST['update_product'])) {
         $query_run = mysqli_query($con, $query);
 
         if ($query_run) {
-            $_SESSION['message'] =  "Produto alterado com sucesso";
+            $_SESSION['message'] =  "Produto alterado com sucesso.";
             header("Location: index.php");
             exit(0);
         } else {
-            $_SESSION['message'] =  "Produto não alterado";
+            $_SESSION['message'] =  "Produto não alterado.";
             header("Location: index.php");
             exit(0);
         }
@@ -89,32 +89,32 @@ if (isset($_POST['save_product'])) {
     //Valida os dados para não ser criado nenhum produto com campo faltando
     if (empty($name) || empty($quantity) || empty($description) || empty($price) || empty($date) || empty($hour)) {
         if (empty($name)) {
-            $_SESSION['message'] =  "Produto não criado. Preencher campo : Nome";
+            $_SESSION['message'] =  "Produto não criado. Preencher campo : Nome.";
             header("Location: product-create.php");
             exit(0);
         }
         if (empty($quantity)) {
-            $_SESSION['message'] =  "Produto não criado. Preencher campo : Quantidade";
+            $_SESSION['message'] =  "Produto não criado. Preencher campo : Quantidade.";
             header("Location: product-create.php");
             exit(0);
         }
         if (empty($description)) {
-            $_SESSION['message'] =  "Produto não criado. Preencher campo : Descrição";
+            $_SESSION['message'] =  "Produto não criado. Preencher campo : Descrição.";
             header("Location: product-create.php");
             exit(0);
         }
         if (empty($price)) {
-            $_SESSION['message'] =  "Produto não criado. Preencher campo : Preço";
+            $_SESSION['message'] =  "Produto não criado. Preencher campo : Preço.";
             header("Location: product-create.php");
             exit(0);
         }
         if (empty($date)) {
-            $_SESSION['message'] =  "Produto não criado. Preencher campo : Data do Cadastro";
+            $_SESSION['message'] =  "Produto não criado. Preencher campo : Data do Cadastro.";
             header("Location: product-create.php");
             exit(0);
         }
         if (empty($hour)) {
-            $_SESSION['message'] =  "Produto não criado. Preencher campo : Hora";
+            $_SESSION['message'] =  "Produto não criado. Preencher campo : Hora.";
             header("Location: product-create.php");
             exit(0);
         }
@@ -125,11 +125,11 @@ if (isset($_POST['save_product'])) {
         $query_run = mysqli_query($con, $query);
         //Verifica se ela foi executada com sucesso ou não
         if ($query_run) {
-            $_SESSION['message'] =  "Produto criado com sucesso";
+            $_SESSION['message'] =  "Produto criado com sucesso.";
             header("Location: product-create.php");
             exit(0);
         } else {
-            $_SESSION['message'] =  "Produto não criado";
+            $_SESSION['message'] =  "Produto não criado.";
             header("Location: product-create.php");
             exit(0);
         }
